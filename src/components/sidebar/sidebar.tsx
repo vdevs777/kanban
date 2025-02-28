@@ -36,22 +36,11 @@ export function Sidebar({ inDialog = false }: SidebarProps) {
               className="ml-9"
             />
           </SidebarOpenButton>
-          <SidebarOpenButton
+          <SidebarButton
             icon={Fish}
-            sectionName="production-analysis"
+            path="/report/production-analysis"
             text="Análise de produção"
-          >
-            <SidebarSubButton
-              text="Listar"
-              url="/report/production-analysis/list"
-              className="ml-9"
-            />
-            <SidebarSubButton
-              text="Criar"
-              url="/report/production-analysis/create"
-              className="ml-9"
-            />
-          </SidebarOpenButton>
+          />
         </section>
         <section className="pt-2">
           <SidebarLabel text="Sistema" />

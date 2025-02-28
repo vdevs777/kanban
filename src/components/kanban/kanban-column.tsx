@@ -26,19 +26,17 @@ export function KanbanColumn({
   onConfigCard,
   bgTitleColor,
 }: KanbanColumnProps) {
-  const widthClass = "w-1/2";
-
   return (
     <div className="border border-gray-300 rounded p-2 m-2 flex-1">
       <h2
         className={cn(
-          " mb-2 text-center text-white h-8 flex items-center justify-center"
+          "mb-2 text-center text-white h-8 flex items-center justify-center"
         )}
         style={{ background: bgTitleColor }}
       >
         {title}
       </h2>
-      <div className="grid grid-cols-2 gap-2">
+      <div className="grid grid-cols-5 gap-4">
         {cards.map((card) => (
           <div key={card.id} className="w-full">
             <KanbanCard
