@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import KanbanColumn from "./kanban-column";
+import { KanbanColumn } from "./kanban-column";
 import { KanbanCardData } from "@/types/kanban-card-data";
 import { v4 as uuidv4 } from "uuid";
 import { red, blue, green } from "tailwindcss/colors";
 
-export default function Kanban() {
+export function Kanban() {
   // Exemplo de dados iniciais em cada coluna
   const [colPedidos, setColPedidos] = useState<KanbanCardData[]>([
     { id: uuidv4(), title: "Recepção - Pedido 1" },

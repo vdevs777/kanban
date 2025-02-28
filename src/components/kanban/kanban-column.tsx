@@ -1,5 +1,5 @@
 import React from "react";
-import KanbanCard from "./kanban-card";
+import { KanbanCard } from "./kanban-card";
 import { KanbanCardData } from "@/types/kanban-card-data";
 import { cn } from "@/lib/utils";
 
@@ -15,7 +15,7 @@ interface KanbanColumnProps {
   bgTitleColor: string;
 }
 
-export default function KanbanColumn({
+export function KanbanColumn({
   title,
   cards,
   focusedCardId,

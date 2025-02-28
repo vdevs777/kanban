@@ -10,7 +10,7 @@ interface KanbanCardProps {
   onDelete: () => void;
   onConfig: () => void;
 }
-export default function KanbanCard({
+export function KanbanCard({
   data,
   isFocused,
   onFocus,
